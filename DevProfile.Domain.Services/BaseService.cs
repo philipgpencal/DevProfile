@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace DevProfile.Application.Services
+namespace DevProfile.Domain.Services
 {
     public abstract class BaseService<T> : IBaseService<T> where T : class
     {

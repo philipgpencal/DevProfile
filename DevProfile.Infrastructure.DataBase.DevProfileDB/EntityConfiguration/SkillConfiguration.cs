@@ -11,16 +11,16 @@ namespace DevProfile.Infrastructure.DataBase.DevProfileDB.EntityConfiguration
             builder.HasKey(d => d.Id);
 
             // Properties
-            builder.Property(d => d.IdDeveloper).IsRequired();
-            builder.Property(d => d.IdTechnology).IsRequired();
-            builder.Property(d => d.IdStack).IsRequired();
+            builder.Property(d => d.DeveloperId).IsRequired();
+            builder.Property(d => d.TechnologyId).IsRequired();
+            builder.Property(d => d.StackId).IsRequired();
 
             // Table & Column Mappings
             builder.ToTable("Skill", "devprofile");
             builder.Property(c => c.Id).HasColumnName("Id");
-            builder.Property(c => c.IdDeveloper).HasColumnName("IdDeveloper");
-            builder.Property(c => c.IdTechnology).HasColumnName("IdTechnology");
-            builder.Property(c => c.IdStack).HasColumnName("IdStack");
+            builder.Property(c => c.DeveloperId).HasColumnName("DeveloperId");
+            builder.Property(c => c.TechnologyId).HasColumnName("TechnologyId");
+            builder.Property(c => c.StackId).HasColumnName("StackId");
         }
     }
 }

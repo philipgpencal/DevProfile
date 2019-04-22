@@ -1,12 +1,16 @@
-﻿using DevProfile.Domain.Core.Interfaces.Services;
+﻿using DevProfile.Domain.Core.Interfaces.Repository;
+using DevProfile.Domain.Core.Interfaces.Services;
+using DevProfile.Domain.Model;
 
 namespace DevProfile.Domain.Services
 {
-    public class DeveloperService : IDeveloperService
+    public class DeveloperService : BaseService<Developer>, IDeveloperService
     {
-        public string Test()
+        private readonly IDeveloperRepository developerRepository;
+
+        public DeveloperService(IDeveloperRepository developerRepository) : base(developerRepository)
         {
-            return "TESTE IOC";
+            this.developerRepository = developerRepository;
         }
     }
 }

@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DevProfile.Application.Services\DevProfile.Application.Services.csproj" />
     <ProjectReference Include="..\DevProfile.Domain.Core\DevProfile.Domain.Core.csproj" />
   </ItemGroup>
 

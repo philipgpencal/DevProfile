@@ -14,7 +14,7 @@ namespace DevProfile.Infrastructure.DataBase.DevProfileDB.EntityConfiguration
             builder.Property(d => d.Name).IsRequired().HasMaxLength(50);
 
             //Relationships
-            builder.HasMany(d => d.Skills).WithOne(s => s.Developer).HasForeignKey(s => s.IdDeveloper);
+            builder.HasMany(d => d.Skills).WithOne(s => s.Developer).HasForeignKey(s => s.DeveloperId);
 
             // Table & Column Mappings
             builder.ToTable("Developer", "devprofile");

@@ -1,4 +1,5 @@
 ﻿using DevProfile.Domain.Core.Interfaces.Repository;
+using DevProfile.Infrastructure.CrossCutting.Extension;
 using DevProfile.Infrastructure.DataBase.DevProfileDB;
 using System;
 using System.Collections.Generic;

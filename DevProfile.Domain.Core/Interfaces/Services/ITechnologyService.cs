@@ -1,6 +1,8 @@
-﻿namespace DevProfile.Domain.Core.Interfaces.Services
+﻿using DevProfile.Domain.Model;
+
+namespace DevProfile.Domain.Core.Interfaces.Services
 {
-    public interface ITechnologyService
+    public interface ITechnologyService : IBaseService<Technology>
     {
     }
 }

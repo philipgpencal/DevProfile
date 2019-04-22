@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DevProfile.Domain.Core\DevProfile.Domain.Core.csproj" />
+    <ProjectReference Include="..\DevProfile.Infrastructure.CrossCutting.Extension\DevProfile.Infrastructure.CrossCutting.Extension.csproj" />
+    <ProjectReference Include="..\DevProfile.Infrastructure.DataBase.DevProfileDB\DevProfile.Infrastructure.DataBase.DevProfileDB.csproj" />
   </ItemGroup>
 
 </Project>

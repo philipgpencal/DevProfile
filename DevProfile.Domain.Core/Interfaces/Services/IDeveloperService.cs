@@ -1,7 +1,8 @@
-﻿namespace DevProfile.Domain.Core.Interfaces.Services
+﻿using DevProfile.Domain.Model;
+
+namespace DevProfile.Domain.Core.Interfaces.Services
 {
-    public interface IDeveloperService
+    public interface IDeveloperService : IBaseService<Developer>
     {
-        string Test();
     }
 }

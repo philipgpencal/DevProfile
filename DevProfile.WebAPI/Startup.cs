@@ -25,9 +25,8 @@ namespace DevProfile.WebAPI
         {
             var connection = this.Configuration.GetConnectionString("DevProfile");
             services.AddDbContext<DevProfileContext>(options =>
-            options.UseSqlServer(connection, x => x.MigrationsAssembly("DevProfile")));
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            options.UseSqlServer(connection, x => x.MigrationsAssembly("DevProfile.WebAPI")));
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         public void ConfigureContainer(ContainerBuilder builder)

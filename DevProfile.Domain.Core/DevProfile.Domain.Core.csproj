@@ -8,4 +8,8 @@
     <Folder Include="Interfaces\Gateway\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DevProfile.Domain.Model\DevProfile.Domain.Model.csproj" />
+  </ItemGroup>
+
 </Project>

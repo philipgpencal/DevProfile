@@ -1,6 +1,8 @@
-﻿namespace DevProfile.Domain.Core.Interfaces.Repository
+﻿using DevProfile.Domain.Model;
+
+namespace DevProfile.Domain.Core.Interfaces.Repository
 {
-    public interface ISkillRepository
+    public interface ISkillRepository : IBaseRepository<Skill>
     {
     }
 }
