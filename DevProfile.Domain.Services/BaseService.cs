@@ -30,6 +30,11 @@ namespace DevProfile.Domain.Services
             baseRepository.Delete(entity);
         }
 
+        public virtual void DeleteList(List<T> entities)
+        {
+            baseRepository.DeleteList(entities);
+        }
+
         public virtual List<T> GetAll()
         {
             return baseRepository.GetAll();

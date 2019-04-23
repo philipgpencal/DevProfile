@@ -49,6 +49,12 @@ namespace DevProfile.Data.Repository
             devProfileContext.SaveChanges();
         }
 
+        public virtual void DeleteList(List<T> entities)
+        {
+            devProfileContext.Set<T>().RemoveRange(entities);
+            devProfileContext.SaveChanges();
+        }
+
         public virtual List<T> QueryByPage(out int maxpage, int page = 0, int pageSize = 3, Expression<Func<T, bool>> predicate = null)
         {
             predicate = predicate ?? (a => true);

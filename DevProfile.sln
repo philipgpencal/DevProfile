@@ -39,7 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{8B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevProfile.Infrastructure.DataBase.DevProfileDB", "DevProfile.Infrastructure.DataBase.DevProfileDB\DevProfile.Infrastructure.DataBase.DevProfileDB.csproj", "{C5110E68-D268-45F0-BC8A-10C722A4946C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevProfile.Infrastructure.CrossCutting.Extension", "DevProfile.Infrastructure.CrossCutting.Extension\DevProfile.Infrastructure.CrossCutting.Extension.csproj", "{66F1DBFB-7862-4CA2-BF7E-EB1C4172B3EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevProfile.Infrastructure.CrossCutting.Extension", "DevProfile.Infrastructure.CrossCutting.Extension\DevProfile.Infrastructure.CrossCutting.Extension.csproj", "{66F1DBFB-7862-4CA2-BF7E-EB1C4172B3EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

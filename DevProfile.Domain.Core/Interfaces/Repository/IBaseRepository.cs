@@ -10,6 +10,7 @@ namespace DevProfile.Domain.Core.Interfaces.Repository
         void Save(T entity);
         T GetById(int id);
         void Delete(T entity);
+        void DeleteList(List<T> entities);
         List<T> QueryByPage(out int maxpage, int page = 0, int pageSize = 3, Expression<Func<T, bool>> predicate = null);
         List<T> Where(Expression<Func<T, bool>> predicate);
         bool Any(Expression<Func<T, bool>> predicate);

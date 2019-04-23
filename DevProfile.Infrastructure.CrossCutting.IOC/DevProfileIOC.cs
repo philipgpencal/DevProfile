@@ -8,6 +8,7 @@ namespace DevProfile.Infrastructure.CrossCutting.IOC
         {
             RepositoryIOC.Load(builder);
             ServicesIOC.Load(builder);
+            AppServicesIOC.Load(builder);
         }
     }
 }
