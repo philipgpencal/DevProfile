@@ -24,6 +24,8 @@ namespace DevProfile.WebAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMemoryCache();
+
             var connection = this.Configuration.GetConnectionString("DevProfile");
             services.AddDbContext<DevProfileContext>(options =>
             options.UseSqlServer(connection, x => x.MigrationsAssembly("DevProfile.WebAPI")));

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using DevProfile.Application.DTO;
+﻿using DevProfile.Application.DTO;
 using DevProfile.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

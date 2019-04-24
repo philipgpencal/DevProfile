@@ -50,7 +50,7 @@ namespace DevProfile.Application.DTO
                 var developer = skills.First(s => s.DeveloperId == develperId).Developer;
                 var developerSkills = skills.Where(s => s.DeveloperId == develperId);
 
-                profile.DeveloperId = developer.Id;
+                profile.DeveloperId = develperId;
                 profile.DeveloperName = developer.Name;
 
                 foreach(var skill in developerSkills)
